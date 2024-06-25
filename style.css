@@ -1,0 +1,304 @@
+/* Define CSS variables for the disease names */
+:root {
+    --alzahiemer-name: "Alzheimer's";
+    --brainTumer-name: "Brain Tumor";
+    --brainStroke-name: "Brain Stroke";
+}
+/* general properties */
+* {
+    font-family: "Ubuntu Sans", sans-serif;
+    outline: none;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    color: #150a28;
+    font-weight: 700;
+}
+.container-fluid img {
+    width: 30px;
+}
+/* section */
+section {
+    margin-top: 150px;
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+}
+
+article .text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article .text h1 {
+    margin-bottom: 40px;
+}
+article .text p{
+    margin-bottom: 30px;
+}
+
+article .img {
+    width: 45%;
+    height: 70%;
+    margin-top: 3%;
+    position: relative;
+    left: 100px;
+}
+
+article .img img {
+    width: 100%;
+    transition: all 01s ease-out;
+}
+
+article .img img:hover {
+    transform: translateX(25px);
+}
+
+/* section */
+/* button class */
+.button,.btn-outline-success,.submitbtn,.logOut{
+    position: relative;
+    background-color: transparent;
+    padding: 0px;
+    color: #e8e8e8 !important;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border: none !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button::before,.btn-outline-success::before,.submitbtn::before,.logOut::before {
+    content: "Explore Services";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(135deg, #1b1463, #e81357, #54c9d7);
+    transform: translate(0%, 90%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.button::after,.btn-outline-success::after,.submitbtn::after,.logOut::after {
+    content: "Explore";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #150a28;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%, -100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.button:hover::before,.btn-outline-success:hover::before,.submitbtn:hover::before,.logOut:hover::before{
+    transform: translate(0%, 0%);
+}
+
+.button:hover::after,.btn-outline-success:hover::after,.submitbtn:hover::after,.logOut:hover::after {
+    transform: translate(0%, -200%);
+}
+
+.button:focus,.btn-outline-success:focus,.submitbtn:focus {
+    outline: none;
+}
+
+.button:active,.btn-outline-success:active,.submitbtn:active  {
+    scale: 0.95;
+}
+.btn-outline-success::before {
+    content: "Login" !important;
+}
+
+.btn-outline-success::after {
+    content: "Login" !important;
+}
+.logOut::before{
+    content: "Logout" !important;
+}
+
+.logOut::after{
+    content: "Logout" !important;
+}
+/* button */
+
+/* Service */
+.service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.service .serviceimg {
+    display: flex;
+    justify-content: right;
+    width: 30%;
+}
+
+.service .serviceimg img {
+    width: 120%;
+    transition: all 01s ease-out;
+}
+
+.service .serviceimg img:hover {
+    transform: translateX(-25px);
+}
+
+.service .modal {
+    width: 35%;
+}
+
+/* modal */
+.modal {
+    display: block !important;
+    position: relative !important;
+    padding: 1px;
+    background: linear-gradient(to right, #1b1463, #e81357 ,#54c9d7);
+    border-radius: 6px;
+    z-index: 1 !important;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    border-bottom: none !important;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px !important;
+}
+.modal-header h5{
+    margin-bottom: 20px;
+}
+.modal-dialog {
+    margin: 0px !important;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.modal-footer {
+    border-top: none !important;
+    justify-content: center !important;
+    padding-top: 0px !important;
+    flex-wrap: nowrap !important;
+
+}
+.modal-footer .button{
+    width: 100px;
+    font-size: 12px;
+}
+.modal-footer .button.alzahiemer::after , .modal-footer .button.alzahiemer::before{
+    content: 'Alzahiemer';
+}
+.modal-footer .button.brainTumer::after , .modal-footer .button.brainTumer::before{
+    content: 'brain Tumer';
+}
+.modal-footer .button.brainStroke::after , .modal-footer .button.brainStroke::before{
+    content: 'brain Stroke';
+}
+
+/* Footer */
+.footer-clean {
+    padding: 50px 0;
+    background-color: #fff;
+    color: #4b4c4d;
+}
+
+.footer-clean h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-clean ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0;
+    color: #101010;
+}
+
+.footer-clean ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+    opacity: 1;
+}
+
+.footer-clean .item.social {
+    text-align: right;
+}
+
+.footer-clean .item.social {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-clean .item.social>a {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #747070;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: inherit;
+    opacity: 0.75;
+}
+
+.footer-clean .item.social>a:hover {
+    opacity: 0.9;
+}
+
+.footer-clean .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    opacity: 0.6;
+}
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}

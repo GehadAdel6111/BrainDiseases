@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Brain diseases</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <script src="navbar.js"></script>
+        <script src="footer.js"></script>
+        <script src="./form.js"></script>
+        <link rel="icon" href="./Images/artificial-intelligence.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <!-- section1 -->
+        <section>
+            <article>
+                <div class="text">
+                    <h1>Your Healing Journey Begin Here</h1>
+                    <p>Use our site to enhance your diagnostic process by letting our algorithm work on your data.</p>
+                    <button onclick="scrollToTargetSection()"
+                        class="button"></button>
+                </div>
+                <div class="img">
+                    <img src="./Images/brain-2750415_1920.png" alt>
+                </div>
+            </article>
+        </section>
+        <!-- Service page -->
+        <div class="service">
+            <div class="serviceimg" id="modalImg">
+                <img src="./Images/—Pngtree—artificial intelligence brain graphic element_14702509.png" alt>
+            </div>
+            <!-- service alert -->
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Detect brain diseases</h5>
+                                <p>Let us help you diagnose the disease</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="./EnterData.html" target="_blank"><button
+                                    class="button enterdata alzahiemer"
+                                    type="button" id="Alzheimers"></button></a>
+                            <a href="./EnterData.html" target="_blank"><button
+                                class="button enterdata brainTumer"
+                                type="button" id="BrainTumor"></button></a>
+                            <a href="./BrainStrokeEnter.html" target="_blank"><button
+                                class="button enterdata brainStroke"
+                                type="button" id="BrainStroke"></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

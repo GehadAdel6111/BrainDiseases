@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brain diseases</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="enterdata.css">
+        <link rel="stylesheet" href="Login.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <script src="navbar.js"></script>
+        <script src="footer.js"></script>
+        <script src="./form.js"></script>
+        <link rel="icon" href="./Images/artificial-intelligence.png">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+    </head>
+    <body class="container">
+        <!-- EnterData form -->
+        <div class="form">
+            <div class="content">
+                <form>
+                    <p class="form-title" id="formTitle">Fill out the file with your information</p>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Patient Name</label>
+                        <input type="text" class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Patient Age</label>
+                        <input type="number" class="form-control"
+                            id="exampleInputEmail1"
+                            aria-describedby="emailHelp" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1"
+                            class="form-label">Patient Number</label>
+                        <input type="password" class="form-control"
+                            id="exampleInputPassword1" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Upload a brain x-ray</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
+                    <div style="display: flex; justify-content: center;"><button type="submit" class="submitbtn"></button></div>
+                </form>
+            </div>
+        </div>
+        <!-- Result box -->
+        <div class="result">
+            <h2>Result</h2>
+            <img src="/Images/mildDem0.jpg" alt="">
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                <strong>Detection result : </strong> MildDemented.
+            </div>
+        </div>
+        <!-- instructions -->
+        <div style="display: flex; justify-content: center; margin-top: 60px;">
+            <div class="alert " role="alert">
+                <h5>Note That you have to type the valid patient data cause hospital will use it as a base for patients.</h5>
+                <p class="instruction">
+                    <b> Instruction: <br></b>
+                    <ul>
+                        <li class="instruction">input patient name in forth format</li>
+                        <li>input Age as Number</li>
+                        <li>input a usable valid working number for patient</li>
+                        <li>click in buttun "Choose File" to upload image to classifay.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+/* form style */
+.form{
+    margin-top: 150px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+}
+.content{
+    background: linear-gradient(to right, #1b1463, #e81357, #54c9d7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+form{
+    background-color: white;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 40px;
+}
+form p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.formContent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.formContent .mb-3{
+    width: 49%;
+}
+.container{
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+    width: 100% !important;
+}
+/* submit button style*/
+.submitbtn::before {
+    content: "Submit";
+}
+.submitbtn::after {
+    content: "Submit";
+}
+/* instructions */
+ul{
+    list-style-type: none;
+}
+.result{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.result img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+}

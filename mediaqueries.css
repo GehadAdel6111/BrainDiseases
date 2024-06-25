@@ -1,0 +1,145 @@
+
+/* media queries */
+@media (max-width: 950px) {
+    .button {
+        margin-right: 40%;
+        margin-top: 10px;
+    }
+    .service .modal{
+        width: 45%;
+    }
+    .modal-footer .button{
+        width: 80px;
+        font-size: 10px;
+    }
+
+    article .text h1 {
+        margin-bottom: 10px;
+    }
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+    .form{
+        width: 80% !important;
+        margin-top: 100px;
+    }
+}
+@media (max-width:767px) {
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .footer-clean .item.social {
+        text-align: center;
+    }
+
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+    .container, .container-md, .container-sm {
+        max-width: 100% !important;
+    }
+    .modal-footer .button{
+        width: 73px;
+        height: 55px;
+        font-size: 9px !important;
+    }
+    .form{
+        width: 97% !important;
+    }
+    form{
+        padding: 25px;
+        width: 100%;
+    }
+    .content{
+        width: 100% !important;
+    }
+    .formContent{
+        gap: 5px !important;
+    }
+    
+}
+@media (min-width: 575px) and (max-width: 766px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 0px !important;
+        border-radius: 2px;
+    }
+    .service .modal {
+        width: 40%;
+    }
+    .container, .container-md, .container-sm {
+        max-width: 100% !important;
+    }
+
+}
+@media only screen and (max-width: 575px) {
+    *{
+        font-size: 12px !important;
+        font-weight: 300 !important;
+    }
+    h1{
+        font-weight: 500 !important;
+    }
+    section{
+        margin-top: 15% !important;
+    }
+    .button {
+        margin-right: 1%;
+        margin-top: 10px;
+    }
+    .modal-footer{
+        display: flex;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+    .modal-footer .button{
+        width: 80px;
+        height: 55px;
+        font-size: 9px !important;
+    }
+    article .text{
+        margin: 30px 0px 0px 30px;
+        width: 45%;
+    }
+    article .text h1 {
+        margin-bottom: 40px;
+    }
+    article .img{
+        width: 65% !important;
+        margin: 70px 0px;
+        position: relative;
+        left: 40px;
+    }
+    .login{
+        width: 90%;
+    }
+    .button{
+        width: 100%;
+    }
+    .btn-outline-success{
+        width: 35%;
+    }
+    .service{
+        flex-direction: column;
+        margin-top: 50px !important;
+    }
+    .service .serviceimg{
+        justify-content: center !important;
+        width: 50%;
+    }
+    .service .modal{
+        width: 80%;
+        height: 21%;
+        margin-top: 50px;
+    }
+    .modal-dialog{
+        display: flex;
+        justify-content: center;
+    }
+    .modal-footer{
+        width: 100%;
+        padding: 0.75rem 0px;
+    }
+}
